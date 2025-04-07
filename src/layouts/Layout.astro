@@ -1,7 +1,7 @@
-import "../styles/global.css";
+---
 import Header from "../components/Header.astro";
-
-<!doctype html>
+import "../styles/global.css";
+---
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,5 +13,8 @@ import Header from "../components/Header.astro";
     <main>
       <slot />
     </main>
+    <footer class="bg-black text-white p-6 text-center">
+      <p>&copy; 2025 LuxElectric. All rights reserved.</p>
+    </footer>
   </body>
 </html>

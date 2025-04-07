@@ -1,53 +1,75 @@
 ---
-import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
 ---
+<Layout>
+  <!-- HERO SECTION -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-sky-100 to-white px-6">
+    <h1 class="text-5xl font-extrabold mb-4">LuxElectric</h1>
+    <p class="text-xl max-w-xl mb-6">
+      High-performance electric scooters for city life. Fast, smart, and sustainable.
+    </p>
+    <a href="#products" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
+      Explore Models
+    </a>
+  </section>
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LuxElectric | Premium E-Scooters</title>
-  </head>
-  <body class="bg-white text-gray-800 font-sans">
-    <!-- HERO -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-sky-100 to-white px-6">
-      <h1 class="text-5xl font-extrabold mb-4">LuxElectric</h1>
-      <p class="text-xl max-w-xl mb-6">High-performance electric scooters for city life. Fast, smart, and sustainable.</p>
-      <a href="#products" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">Explore Models</a>
-    </section>
+  <!-- FEATURES SECTION -->
+  <section class="py-20 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-12">Why Choose LuxElectric?</h2>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="text-center">
+        <img src="/icons/battery.svg" alt="Battery" class="mx-auto mb-4 h-16" />
+        <h3 class="text-xl font-semibold mb-2">Long Range</h3>
+        <p>Ride up to 60km on a single charge with powerful lithium batteries.</p>
+      </div>
+      <div class="text-center">
+        <img src="/icons/speed.svg" alt="Speed" class="mx-auto mb-4 h-16" />
+        <h3 class="text-xl font-semibold mb-2">Top Speed</h3>
+        <p>Zoom through the city with speeds up to 45km/h. Smooth. Silent. Fast.</p>
+      </div>
+      <div class="text-center">
+        <img src="/icons/app.svg" alt="App" class="mx-auto mb-4 h-16" />
+        <h3 class="text-xl font-semibold mb-2">Smart App</h3>
+        <p>Track rides, lock your scooter, and get diagnostics with the Lux app.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- FEATURES -->
-    <section class="py-20 px-6 bg-white">
-      <h2 class="text-3xl font-bold text-center mb-12">Why Choose LuxElectric?</h2>
-      <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-        <div class="text-center">
-          <img src="/icons/battery.svg" alt="Battery" class="mx-auto mb-4 h-16" />
-          <h3 class="text-xl font-semibold mb-2">Long Range</h3>
-          <p>Ride up to 60km on a single charge with powerful lithium batteries.</p>
+  <!-- PRODUCTS SECTION -->
+  <section id="products" class="py-20 px-6 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Models</h2>
+    <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="/images/scooter1.jpg" alt="Lux S1" class="w-full h-64 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Lux S1</h3>
+          <p class="mb-4">
+            Lightweight city scooter with app integration and regenerative braking.
+          </p>
+          <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
         </div>
-        <div class="text-center">
-          <img src="/icons/speed.svg" alt="Speed" class="mx-auto mb-4 h-16" />
-          <h3 class="text-xl font-semibold mb-2">Top Speed</h3>
-          <p>Zoom through the city with speeds up to 45km/h.
-<!-- PRODUCTS Section -->
-<section id="products" class="py-20 px-6 bg-gray-50">
-  <h2 class="text-3xl font-bold text-center mb-12">Our Models</h2>
-  <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
-      <img src="/images/scooter1.jpg" alt="Lux S1" class="w-full h-64 object-cover" />
-      <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-2">Lux S1</h3>
-        <p class="mb-4">Lightweight city scooter with app integration and regenerative braking.</p>
-        <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="/images/scooter2.jpg" alt="Lux Pro X" class="w-full h-64 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Lux Pro X</h3>
+          <p class="mb-4">
+            Powerful motor, max range, built for performance and long-distance rides.
+          </p>
+          <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
+        </div>
       </div>
     </div>
-    <div class="bg-white shadow-lg rounded-xl overflow-hidden">
-      <img src="/images/scooter2.jpg" alt="Lux Pro X" class="w-full h-64 object-cover" />
-      <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-2">Lux Pro X</h3>
-        <p class="mb-4">Powerful motor, max range, built for performance and long-distance rides.</p>
-        <a href="#" class="text-blue-600 hover:underline">Learn more →</a>
-      </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+      <p class="text-lg">
+        LuxElectric was born from a love for clean mobility and bold design. Our goal is to bring smart,
+        sustainable e-scooters to every urban rider.
+      </p>
     </div>
-  </div>
-</section>
+  </section>
+</Layout>
